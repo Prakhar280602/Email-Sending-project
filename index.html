@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventia</title>
+</head>
+
+<body>
+    <main>
+        <video src="video.mp4" autoplay muted loop></video>
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="heading">
+                <span>E</span>
+                <span>V</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+                <span>I</span>
+                <span>A</span>
+            </div>
+            <div class="tagline">
+                Where Every Detail Finds Its Perfect Form, Crafting Unforgettable<br> Experiences Together!
+                <br>
+                Register For <strong>EVENTIA X</strong> releasing soon!
+            </div>
+            <div class="cta">
+                <button class="btn btn-1">All Events <svg width="50" height="12" viewBox="0 0 137 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M137 6L127 0.226497V11.7735L137 6ZM0 7H128V5H0V7Z" fill="white" />
+                    </svg>
+                </button>
+                <button class="btn btn-2">Learn More
+                </button>
+            </div>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="heading">
+                <span>E</span>
+                <span>V</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+                <span>I</span>
+                <span>A</span>
+                <span>X</span>
+            </div>
+            
+            <input type="hidden" name="access_key" value="cc53cac3-e40f-468a-8f9d-ab5ef551c792" >
+
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <textarea name="message" required placeholder="Address"></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <button type="submit" class="btn btn-1">Let's Register</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

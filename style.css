@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+video{
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #000000ec, transparent);
+    z-index: -1;
+    mix-blend-mode: darken;
+    backdrop-filter: blur(4px);
+}
+
+.content{
+    margin-top: auto;
+    margin-bottom: 100px;
+}
+
+.heading{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 100px;
+    letter-spacing: -10px;
+}
+
+.heading span:nth-child(1){
+    color: #D7F336;
+}
+
+.tagline{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.tagline strong{
+    color: #D7F336;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.cta{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    padding: 10px 30px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-1{
+    background: #D7F336;
+    border-color: #D7F336;
+}
+
+.btn-1 svg path{
+    fill: #000;
+}
+
+.btn-1:hover{
+    background: none;
+    color: #fff;
+}
+
+.btn-1:hover svg path{
+    fill: #fff;
+}
+
+
+.btn-2{
+    background: none;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-2:hover{
+    background: #fff;
+    color: #000;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+    align-items: center;
+}
+
+form .heading{
+    font-size: 50px;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+}
+
+form .heading span:last-child{
+    display: inline-block;
+    scale: 1.5;
+    margin-left: 5px;
+    color: #D7F336;
+}
+
+input, textarea{
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+textarea{
+    height: 120px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #ffffffbe;
+    font-family: "Poppins", sans-serif;
+}
+
+input:focus, textarea:focus{
+    border-color: #D7F336;
+}
